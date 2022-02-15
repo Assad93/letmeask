@@ -1,0 +1,131 @@
+@import "colors";
+
+#page-auth {
+  display: flex;
+  justify-content: stretch;
+  height: 100vh;
+
+  aside {
+    flex: 7;
+
+    background-color: $background-purple;
+    color: $color-white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 12rem 8rem;
+
+    img {
+      max-width: 32rem;
+    }
+
+    strong {
+      font: 700 3.6rem "Poppins", sans-serif;
+      line-height: 4.2rem;
+      margin-top: 1.6rem;
+    }
+
+    p {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      margin-top: 1.6rem;
+      color: $color-secondary;
+    }
+  }
+
+  main {
+    flex: 8;
+
+    padding: 0 3.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .main-content {
+      max-width: 32rem;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+
+      > img {
+        align-self: center;
+      }
+
+      form {
+        input {
+          height: 5rem;
+          border-radius: 0.8rem;
+          padding: 0 1.6rem;
+          background: $color-white;
+          border: 1px solid $color-light-grey;
+        }
+
+        button {
+          margin-top: 1.6rem;
+        }
+
+        button,
+        input {
+          width: 100%;
+        }
+      }
+    }
+
+    .create-room {
+      margin-top: 6.4rem;
+      height: 5rem;
+      border-radius: 0.8rem;
+      font-weight: 500;
+      background-color: $color-red;
+      color: $color-white;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      border: 0;
+      cursor: pointer;
+
+      transition: filter 0.2s;
+
+      img {
+        margin-right: 0.8rem;
+      }
+
+      &:hover {
+        //diminui o brilho do botão em 30%;
+        filter: brightness(0.7);
+      }
+    }
+
+    .separator {
+      font-size: 1.4rem;
+      color: $color-light-grey;
+
+      margin: 3.2rem 0;
+      display: flex;
+      align-items: center;
+
+      &::before {
+        flex: 1;
+        height: 1px;
+        background-color: $color-light-grey;
+        margin-right: 1.6rem;
+        content: "";
+      }
+
+      &::after {
+        flex: 1;
+        height: 1px;
+        background-color: $color-light-grey;
+        margin-left: 1.6rem;
+        content: "";
+      }
+    }
+  }
+}

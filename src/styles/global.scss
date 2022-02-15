@@ -1,0 +1,23 @@
+@import "colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $background-primary;
+  color: $color-primary;
+}
+
+body,
+input,
+button,
+textarea {
+  font: 400 1.6rem "Roboto", sans-serif;
+}
