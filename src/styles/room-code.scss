@@ -1,0 +1,30 @@
+@import "colors";
+@import "mixins";
+
+.room-code {
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid $background-purple;
+  overflow: hidden;
+  background-color: $color-white;
+  cursor: pointer;
+
+  display: flex;
+
+  div {
+    background-color: $background-purple;
+    padding: 0 12px;
+    height: 100%;
+    @include centralize();
+  }
+
+  span {
+    display: block;
+    align-self: center;
+    flex: 1;
+    padding: 0 16px 0 12px;
+    width: 270px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
