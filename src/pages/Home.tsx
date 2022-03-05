@@ -33,12 +33,17 @@ export default function Home() {
 
     const snapshot = await get(child(dbRef, `rooms/${roomCode}`));
 
-    if (snapshot.exists()) {
-      navigate(`/room/${roomCode}`);
-    } else {
+    if (!snapshot.exists()) {
       alert("Sala não existe!");
       return;
     }
+
+    if (snapshot.val().endedAt) {
+      alert("Esta sala já foi encerrada!");
+      return;
+    }
+
+    navigate(`/room/${roomCode}`);
   };
 
   const handleRoomCode = (event: ChangeEvent<HTMLInputElement>) => {

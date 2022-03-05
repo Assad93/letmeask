@@ -21,6 +21,12 @@
     margin-right: 0.8rem;
   }
 
+  &.outlined {
+    background-color: #fff;
+    border: 1px solid $background-purple;
+    color: $background-purple;
+  }
+
   &:not(:disabled):hover {
     //diminui o brilho do botão em 30%;
     filter: brightness(0.7);

@@ -16,6 +16,10 @@
     padding: 0 12px;
     height: 100%;
     @include centralize();
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 
   span {
