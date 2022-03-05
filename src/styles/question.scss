@@ -10,6 +10,19 @@
     margin-top: 8px;
   }
 
+  &.highlighted {
+    background: $background-highlighted-question;
+    border: 1px solid $background-purple;
+
+    footer .user-info span {
+      color: $color-primary;
+    }
+  }
+
+  &.answered {
+    background: $background-answered-question;
+  }
+
   p {
     color: $color-primary;
   }
@@ -19,6 +32,11 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 24px;
+
+    > div {
+      display: flex;
+      gap: 16px;
+    }
 
     button {
       border: 0;
