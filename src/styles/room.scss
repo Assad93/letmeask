@@ -2,7 +2,7 @@
 
 #page-room {
   header {
-    padding: 24px;
+    padding: 2.4rem;
     border-bottom: 1px solid #e2e2e2;
 
     .content {
@@ -18,7 +18,7 @@
 
       > div {
         display: flex;
-        gap: 16px;
+        gap: 1.6rem;
 
         button {
           height: 40px;
@@ -27,9 +27,30 @@
     }
   }
 
+  @media screen and (max-width: 1023px) {
+    header {
+      .content {
+        flex-direction: column;
+        gap: 1.5rem;
+
+        > div {
+          flex-direction: column;
+        }
+      }
+    }
+
+    main {
+      padding: 0 1.5rem;
+      .room-title {
+        justify-content: center;
+      }
+    }
+  }
+
   main {
     max-width: 800px;
     margin: 0 auto;
+    padding-bottom: 20px;
 
     .room-title {
       margin: 32px 0 24px;

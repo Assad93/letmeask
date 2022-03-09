@@ -144,4 +144,32 @@
       }
     }
   }
+
+  @media screen and (max-width: 1023px) {
+    & {
+      flex-direction: column;
+
+      aside {
+        padding: 1rem;
+        flex: 1;
+
+        img {
+          display: none;
+        }
+
+        strong {
+          margin-top: 0.5rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+          margin-top: 0.5rem;
+        }
+      }
+    }
+
+    main {
+      flex: 5;
+    }
+  }
 }
