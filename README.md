@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# Let Me Ask
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![GitHub repo size](https://img.shields.io/github/repo-size/Assad93/letmeask?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/Assad93/letmeask?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/Assad93/letmeask?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/Assad93/letmeask?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/Assad93/letmeask?style=for-the-badge)
 
-## Available Scripts
+<img src="./public/images/letmeask.png" alt="Tela principal do Let Me Ask">
 
-In the project directory, you can run:
+> Let Me Ask foi aplicação feita seguindo o NLW together da RocketSeat. Este app permite criar salas para que os usuários possam fazer perguntas para um host, o host pode marcar a pergunta como lida e como respondendo e, por fim, os Usuários podem dar like nas perguntas. A aplicação foi feita utilizando a autenticação e o realtime database do Firebase. 
 
-### `npm start`
+## Site em produção
+  Quem sabe faz ao vivo meu!
+  
+  [Let Me Ask](https://letmeask-fe889.web.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 💻 Pré-requisitos
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Antes de começar, verifique se você atendeu aos seguintes requisitos:
+* Você possui o `Node Js` instalado em sua máquina?
+* Você possui uma conta Google para utilizar no `Firebase`?
 
-### `npm test`
+## 🚀 Instalando Let Me Ask
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para instalar o Let Me Ask, siga estas etapas:
 
-### `npm run build`
+* Abra o firebase, crie um projeto e adicione o Google como mecanismo de autenticação.
+* Crie um realtime database.
+* Pegue as configurações, crie um arquivo .env na pasta raiz do projeto e crie variáveis de acordo com os nomes das propriedades do objeto FirebaseConfig e insira os seus respectivos valores.
+* Abra o terminal e navegue até a pasta do projeto e, depois:
+```
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ☕ Usando Let Me Ask
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para usar Let Me Ask, siga estas etapas:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Na raiz do projeto, execute no terminal:
+```
+npm run start
+```
+Fique à vontade para contribuir!
